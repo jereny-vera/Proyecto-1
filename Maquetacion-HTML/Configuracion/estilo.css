@@ -1,0 +1,119 @@
+/* Estilo Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del body para todas las páginas */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Color de fondo de toda la página */
+    color: #333; /* Color de texto por defecto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: #0044cc; /* Color principal de los títulos */
+    margin-bottom: 20px;
+}
+
+/* Contenedores */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para botones (enlaces en este caso) */
+.button-container a {
+    display: inline-block;
+    background-color: #0044cc; /* Color del botón azul */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.button-container a:hover {
+    background-color: #0033aa; /* Color al pasar el ratón */
+}
+
+/* Estilo para párrafos */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* Estilo para formularios */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para las tarjetas de registro */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.card {
+    border: 1px solid #ccc; /* Borde de las tarjetas */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 200px; /* Ancho de las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para efecto 3D */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+}
+
+/* Estilos del footer si lo tienes */
+footer {
+    background-color: #0044cc; /* Color de fondo del footer */
+    color: white; /* Color de texto en el footer */
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado interno */
+    position: fixed; /* Posición fija en la parte inferior */
+    bottom: 0; /* Alineación al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos específicos para las cuatro interfaces */
+.config-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las tarjetas */
+    gap: 20px; /* Espacio entre tarjetas */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.config-card {
+    border: 1px solid #ccc; /* Borde de las tarjetas */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 250px; /* Ancho de las tarjetas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para efecto 3D */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    text-align: center; /* Centrar texto en las tarjetas */
+}
+
+.config-card button {
+    background-color: #0044cc; /* Color del botón azul */
+    color: white; /* Color del texto en el botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    margin-top: 10px; /* Espacio superior para el botón */
+}
+
+.config-card button:hover {
+    background-color: #0033aa; /* Color al pasar el ratón */
+}

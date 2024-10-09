@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Gestión de Usuarios - Panel de Administración</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo CSS externo -->
+</head>
+<body>
+
+<header>
+    <h1>Gestión de Usuarios</h1> <!-- Título del encabezado -->
+</header>
+
+<main>
+    <h2>Configura los usuarios y permisos en el sistema</h2> <!-- Subtítulo principal -->
+
+    <!-- Formulario para agregar un nuevo usuario -->
+    <form id="addUserForm">
+        <h3>Añadir Nuevo Usuario</h3> <!-- Título del formulario -->
+        <label for="username">Nombre de Usuario:</label> <!-- Etiqueta para el campo de nombre de usuario -->
+        <input type="text" id="username" name="username" placeholder="Ingresa el nombre de usuario" required> <!-- Campo de entrada para el nombre de usuario -->
+
+        <label for="email">Correo Electrónico:</label> <!-- Etiqueta para el campo de correo electrónico -->
+        <input type="email" id="email" name="email" placeholder="Ingresa el correo electrónico" required> <!-- Campo de entrada para el correo electrónico -->
+
+        <label for="role">Rol de Usuario:</label> <!-- Etiqueta para el campo de rol -->
+        <select id="role" name="role"> <!-- Menú desplegable para seleccionar el rol -->
+            <option value="admin">Administrador</option> <!-- Opción para Administrador -->
+            <option value="editor">Editor</option> <!-- Opción para Editor -->
+            <option value="viewer">Visualizador</option> <!-- Opción para Visualizador -->
+        </select>
+
+        <button type="submit">Añadir Usuario</button> <!-- Botón para enviar el formulario -->
+    </form>
+
+    <!-- Tabla para mostrar los usuarios existentes -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de Usuario</th> <!-- Encabezado para Nombre de Usuario -->
+                <th>Correo Electrónico</th> <!-- Encabezado para Correo Electrónico -->
+                <th>Rol</th> <!-- Encabezado para Rol -->
+                <th>Acciones</th> <!-- Encabezado para Acciones -->
+            </tr>
+        </thead>
+        <tbody id="userTableBody"> <!-- Cuerpo de la tabla donde se mostrarán los usuarios -->
+            <!-- Aquí irán los usuarios que vayas añadiendo -->
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <p>&copy; 2024 Universidad - Panel de Administración</p> <!-- Pie de página -->
+</footer>
+
+<script src="app.js"></script> <!-- Enlaza el archivo JavaScript externo -->
+</body>
+</html>

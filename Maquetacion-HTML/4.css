@@ -1,0 +1,100 @@
+* {
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina los rellenos predeterminados de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del cuerpo */
+    background-color: #f4f4f4; /* Color de fondo de la página */
+    color: #333; /* Color del texto general */
+}
+
+header {
+    background-color: #0056b3; /* Color de fondo del encabezado */
+    color: white; /* Color del texto en el encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+    padding: 20px 0; /* Espaciado vertical en el encabezado */
+}
+
+h1 {
+    font-size: 2em; /* Tamaño de la fuente del encabezado principal */
+}
+
+main {
+    padding: 20px; /* Espaciado alrededor del contenido principal */
+}
+
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas adyacentes */
+    margin-bottom: 20px; /* Espaciado inferior de la tabla */
+}
+
+th, td {
+    padding: 15px; /* Espaciado interno en las celdas de la tabla */
+    border: 1px solid #ccc; /* Borde gris claro para las celdas */
+    text-align: left; /* Alinea el texto a la izquierda en las celdas */
+}
+
+th {
+    background-color: #0056b3; /* Color de fondo del encabezado de la tabla */
+    color: white; /* Color del texto del encabezado de la tabla */
+}
+
+.button {
+    background-color: #0056b3; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px; /* Espaciado interno del botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none; /* Sin subrayado en el texto del botón */
+    font-size: 1em; /* Tamaño de la fuente del botón */
+    border-radius: 5px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor a puntero al pasar sobre el botón */
+    border: none; /* Sin borde alrededor del botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.button:hover {
+    background-color: #003d7a; /* Color de fondo al pasar el mouse sobre el botón */
+}
+
+.button.red {
+    background-color: #d9534f; /* Color de fondo para botones con clase 'red' */
+}
+
+.button.red:hover {
+    background-color: #c9302c; /* Color de fondo al pasar el mouse sobre botones con clase 'red' */
+}
+
+.edit-container {
+    display: none; /* Oculta el contenedor de edición por defecto */
+    background-color: white; /* Color de fondo del contenedor de edición */
+    padding: 20px; /* Espaciado interno del contenedor de edición */
+    border-radius: 10px; /* Bordes redondeados del contenedor de edición */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del contenedor de edición */
+    margin-bottom: 20px; /* Espaciado inferior del contenedor de edición */
+}
+
+.edit-container h2 {
+    margin-bottom: 20px; /* Espaciado inferior del encabezado del contenedor de edición */
+    text-align: center; /* Centra el texto del encabezado del contenedor de edición */
+}
+
+.edit-container label, .edit-container input, .edit-container select {
+    width: 100%; /* Ancho completo para etiquetas, inputs y selects */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espaciado inferior */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+footer {
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 10px 0; /* Espaciado vertical en el pie de página */
+    background-color: #0056b3; /* Color de fondo del pie de página */
+    color: white; /* Color del texto en el pie de página */
+    position: relative; /* Posicionamiento relativo para el pie de página */
+    width: 100%; /* Ancho completo del pie de página */
+    bottom: 0; /* Alinea el pie de página en la parte inferior */
+}

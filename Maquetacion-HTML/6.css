@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Elimina el margen y el relleno predeterminados de todos los elementos 
+       y asegura que el padding y el border se incluyan en el tamaño total del elemento. */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Establece la fuente principal para el cuerpo, 
+       un color de fondo gris claro y un color de texto oscuro. */
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* Define el encabezado con un color de fondo azul oscuro, 
+       texto blanco y centrado, con 20px de padding arriba y abajo. */
+}
+
+h1 {
+    font-size: 2em;
+    /* Aumenta el tamaño de la fuente del título a 2em. */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    /* Agrega padding alrededor del contenido principal y 
+       centra el texto dentro del contenedor principal. */
+}
+
+.admin-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    /* Crea un contenedor flexible para las tarjetas, con alineación centrada, 
+       un espacio de 20px entre tarjetas y un margen superior de 40px. */
+}
+
+.admin-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    /* Estiliza cada tarjeta con fondo blanco, bordes redondeados, 
+       sombra ligera, padding de 30px, un ancho de 250px y texto centrado. 
+       También añade una transición suave al aplicar efectos de transformación. */
+}
+
+.admin-card:hover {
+    transform: scale(1.05);
+    /* Al pasar el cursor sobre una tarjeta, ésta aumenta ligeramente su tamaño. */
+}
+
+.admin-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #0056b3;
+    /* El título dentro de la tarjeta tiene un margen inferior de 20px, 
+       un tamaño de fuente de 1.5em y color azul oscuro. */
+}
+
+.admin-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #666;
+    /* El párrafo dentro de la tarjeta tiene un tamaño de fuente normal, 
+       un margen inferior de 20px y color de texto gris oscuro. */
+}
+
+.admin-card a {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Los enlaces dentro de la tarjeta tienen un fondo azul oscuro, 
+       texto blanco, 10px de padding arriba y abajo, 
+       20px a los lados, sin subrayado, bordes redondeados 
+       y una transición suave al cambiar el color de fondo. */
+}
+
+.admin-card a:hover {
+    background-color: #003d7a;
+    /* Al pasar el cursor sobre el enlace, el color de fondo se oscurece. */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0056b3;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    /* El pie de página está centrado, tiene 10px de padding, 
+       fondo azul oscuro, texto blanco y ocupa todo el ancho de la página. 
+       Está fijado en la parte inferior de la ventana. */
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Seguridad - Panel de Administración</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo CSS externo -->
+</head>
+<body>
+
+<header>
+    <h1>Seguridad</h1> <!-- Título del encabezado -->
+</header>
+
+<main>
+    <h2>Cambiar Contraseña</h2> <!-- Subtítulo principal -->
+    <p>Aquí puedes configurar opciones de seguridad como cambiar contraseñas.</p> <!-- Descripción de la sección -->
+    <form id="changePasswordForm"> <!-- Formulario para cambiar la contraseña -->
+        <label for="currentPassword">Contraseña Actual:</label> <!-- Etiqueta para el campo de contraseña actual -->
+        <input type="password" id="currentPassword" name="currentPassword" required> <!-- Campo de entrada para la contraseña actual -->
+
+        <label for="newPassword">Nueva Contraseña:</label> <!-- Etiqueta para el campo de nueva contraseña -->
+        <input type="password" id="newPassword" name="newPassword" required> <!-- Campo de entrada para la nueva contraseña -->
+
+        <label for="confirmPassword">Confirmar Nueva Contraseña:</label> <!-- Etiqueta para el campo de confirmación de contraseña -->
+        <input type="password" id="confirmPassword" name="confirmPassword" required> <!-- Campo de entrada para confirmar la nueva contraseña -->
+
+        <button type="submit">Cambiar Contraseña</button> <!-- Botón para enviar el formulario -->
+    </form>
+    <div class="message" id="message"></div> <!-- Div para mostrar mensajes de éxito o error -->
+</main>
+
+<footer>
+    <p>&copy; 2024 Universidad - Panel de Administración</p> <!-- Pie de página -->
+</footer>
+
+<script src="app.js"></script> <!-- Enlaza el archivo JavaScript externo -->
+</body>
+</html>

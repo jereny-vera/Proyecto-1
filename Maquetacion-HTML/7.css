@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Elimina márgenes y rellenos predeterminados de todos los elementos 
+       y asegura que padding y borders se incluyan en las dimensiones del elemento. */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Establece la fuente del cuerpo como Arial, un fondo gris claro y color de texto oscuro.
+       Usa Flexbox para centrar el contenido en la página, tanto horizontal como verticalmente,
+       con la altura total del viewport. */
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    /* Define el contenedor de login con un fondo blanco, bordes redondeados, 
+       sombra ligera, padding de 30px y un ancho fijo de 300px. */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0056b3;
+    /* Título centrado en el contenedor de login con un color azul oscuro 
+       y un margen inferior de 20px para separarlo del siguiente elemento. */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Hace que las etiquetas se muestren como bloques para que ocupen 
+       toda la línea y separa cada una con un margen inferior de 10px. 
+       Además, hace que el texto sea más grueso. */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* Define los campos de entrada con un ancho del 100%, 
+       un relleno de 10px, un borde gris claro y bordes redondeados. 
+       También les añade un margen inferior de 20px para separar los inputs. */
+}
+
+.button {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    /* Estiliza el botón con un fondo azul oscuro, texto blanco, padding de 15px, 
+       sin subrayado, bordes redondeados y un ancho del 100%. 
+       El botón se comporta como un bloque y tiene un efecto de transición suave 
+       al cambiar el color de fondo. */
+}
+
+.button:hover {
+    background-color: #003d7a;
+    /* Cambia el color de fondo del botón a un tono de azul más oscuro 
+       cuando se pasa el cursor por encima. */
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    /* Define el estilo de los mensajes de error con texto rojo, centrado 
+       y un margen superior para separarlo del contenido superior. */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    /* El pie de página tiene el texto centrado, un margen superior de 20px 
+       para separarlo del contenido y el color del texto es gris oscuro. */
+}

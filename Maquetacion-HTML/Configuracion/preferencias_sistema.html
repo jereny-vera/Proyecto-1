@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Preferencias del Sistema - Panel de Administración</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="estilo.css"> <!-- Enlaza el archivo CSS externo -->
+</head>
+<body>
+
+<header>
+    <h1>Preferencias del Sistema</h1> <!-- Título del encabezado -->
+</header>
+
+<main>
+    <h2>Configurar Preferencias</h2> <!-- Subtítulo principal -->
+    <form id="preferencesForm"> <!-- Formulario para configurar preferencias -->
+        <label for="theme">Seleccionar Tema:</label> <!-- Etiqueta para el campo de selección de tema -->
+        <select id="theme" name="theme"> <!-- Menú desplegable para seleccionar el tema -->
+            <option value="light">Claro</option> <!-- Opción para tema claro -->
+            <option value="dark">Oscuro</option> <!-- Opción para tema oscuro -->
+        </select>
+
+        <label for="logo">Subir Logo:</label> <!-- Etiqueta para el campo de carga de logo -->
+        <input type="file" id="logo" name="logo" accept="image/*"> <!-- Campo de entrada para subir un logo -->
+
+        <button type="submit">Guardar Preferencias</button> <!-- Botón para enviar el formulario -->
+    </form>
+    
+    <div class="message" id="preferencesMessage"></div> <!-- Div para mostrar mensajes de éxito o error -->
+</main>
+
+<footer>
+    <p>&copy; 2024 Universidad - Panel de Administración</p> <!-- Pie de página -->
+</footer>
+
+<script src="app.js"></script> <!-- Enlaza el archivo JavaScript externo -->
+</body>
+</html>

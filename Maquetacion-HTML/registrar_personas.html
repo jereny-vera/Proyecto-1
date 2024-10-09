@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Personas - Universidad</title>
+    <link rel="stylesheet" href="2.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Universidad - Registro de Personas</h1>
+    </header>
+    
+    <main>
+        <div class="form-container">
+            <h2>Registrar Persona</h2>
+            <form id="registroForm">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo" required>
+
+                <label for="cedula">Cédula de Identidad:</label>
+                <input type="text" id="cedula" name="cedula" placeholder="Ingrese su cédula" required>
+                <p id="error" style="color: red; display: none;"></p> <!-- Mensaje de error -->
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono" required>
+
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Ingrese su dirección" required>
+
+                <label for="discapacidad">Tipo de Discapacidad:</label>
+                <select id="discapacidad" name="discapacidad" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="visual">Visual</option>
+                    <option value="auditiva">Auditiva</option>
+                    <option value="motora">Motora</option>
+                    <option value="intelectual">Intelectual</option>
+                    <option value="otra">Otra</option>
+                </select>
+
+                <button type="submit" class="button">Registrar</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Capturar el formulario y el mensaje de error
+        const form = document.getElementById('registroForm');
+        const errorMessage = document.getElementById('error');
+
+        // Función para validar la cédula
+        function validarCedula(cedula) {
+            // Expresión regular para validar la cédula (Ejemplo: 10 dígitos)
+            const cedulaRegex = /^\d{10}$/;
+            return cedulaRegex.test(cedula);
+        }
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el comportamiento predeterminado del formulario
+            
+            // Obtener los valores del formulario
+            const nombre = document.getElementById('nombre').value;
+            const cedula = document.getElementById('cedula').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const direccion = document.getElementById('direccion').value;
+            const discapacidad = document.getElementById('discapacidad').value;
+
+            // Validar la cédula
+            if (!validarCedula(cedula)) {
+                errorMessage.textContent = 'La cédula debe contener exactamente 10 dígitos.';
+                errorMessage.style.display = 'block'; // Mostrar mensaje de error
+                document.getElementById('cedula').focus(); // Mantener el foco en el campo de cédula
+                return; // Detener la ejecución si la cédula no es válida
+            } else {
+                errorMessage.style.display = 'none'; // Ocultar mensaje de error
+            }
+
+            // Crear un objeto con los datos
+            const persona = {
+                nombre,
+                cedula,
+                email,
+                telefono,
+                direccion,
+                discapacidad
+            };
+
+            // Obtener los registros existentes en localStorage
+            let registros = JSON.parse(localStorage.getItem('registros')) || [];
+
+            // Agregar la nueva persona al array de registros
+            registros.push(persona);
+
+            // Guardar los registros actualizados en localStorage
+            localStorage.setItem('registros', JSON.stringify(registros));
+
+            // Limpiar el formulario
+            form.reset();
+
+            // Redirigir a la página de consultas
+            window.location.href = 'consultar_registro.html';
+        });
+    </script>
+</body>
+</html>

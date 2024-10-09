@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Elimina márgenes y rellenos predeterminados de todos los elementos 
+       y asegura que el padding y los borders se incluyan en las dimensiones del elemento. */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Define la fuente base como Arial, con un color de fondo gris claro y texto de color gris oscuro. */
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    /* El encabezado tiene un fondo azul oscuro, texto blanco y está centrado.
+       El relleno vertical es de 20px para darle espacio al texto. */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    /* El título principal tiene un tamaño de fuente grande (2em) y un margen inferior 
+       de 10px para separarlo de los elementos debajo. */
+}
+
+main {
+    padding: 20px;
+    /* El contenido principal tiene un padding de 20px para dar espacio interno 
+       alrededor de su contenido. */
+}
+
+.faq {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    /* Cada sección FAQ tiene un margen inferior de 20px para separar las secciones,
+       padding de 15px para espacio interno, un borde gris claro y bordes redondeados. 
+       El fondo es blanco para destacar las secciones. */
+}
+
+.faq h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0056b3;
+    /* El título de cada sección FAQ tiene un tamaño de fuente de 1.5em, 
+       un margen inferior de 10px y el texto está en color azul oscuro. */
+}
+
+.faq p {
+    margin: 5px 0;
+    font-size: 1em;
+    /* Los párrafos dentro de cada sección FAQ tienen un margen vertical de 5px 
+       para separarlos entre sí y un tamaño de fuente estándar de 1em. */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0056b3;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    /* El pie de página está centrado y tiene un fondo azul oscuro y texto blanco. 
+       Ocupa el ancho completo de la página, tiene un relleno vertical de 10px 
+       y se coloca en la parte inferior de la página. */
+}
+
+.contact {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    /* La sección de contacto tiene un margen superior de 20px para separarla de los elementos anteriores,
+       un relleno de 10px para espacio interno, un fondo gris claro (#e9ecef) 
+       y bordes redondeados de 5px. */
+}

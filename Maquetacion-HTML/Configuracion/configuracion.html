@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Panel de Administración</title>
+    <!-- Enlaza el archivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Encabezado de la página de configuración -->
+    <header>
+        <h1>Configuración del Sistema</h1> <!-- Título del encabezado -->
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <div class="config-container">
+            <!-- Tarjeta para la gestión de usuarios -->
+            <div class="config-card">
+                <h3>Gestión de Usuarios</h3> <!-- Título de la tarjeta -->
+                <p>Configura los usuarios y permisos en el sistema.</p> <!-- Descripción breve -->
+                <button onclick="window.location.href='gestion_usuarios.html'">Configurar</button> <!-- Botón para redirigir a la página de gestión de usuarios -->
+            </div>
+
+            <!-- Tarjeta para las preferencias del sistema -->
+            <div class="config-card">
+                <h3>Preferencias del Sistema</h3>
+                <p>Personaliza temas, logos y configuraciones generales.</p>
+                <button onclick="window.location.href='preferencias_sistema.html'">Configurar</button> <!-- Botón para redirigir a la página de preferencias del sistema -->
+            </div>
+
+            <!-- Tarjeta para opciones de seguridad -->
+            <div class="config-card">
+                <h3>Seguridad</h3>
+                <p>Configura opciones de seguridad, como cambiar contraseñas.</p>
+                <button onclick="window.location.href='config_seguridad.html'">Configurar</button> <!-- Botón para redirigir a la página de seguridad -->
+            </div>
+
+            <!-- Tarjeta para copias de seguridad del sistema -->
+            <div class="config-card">
+                <h3>Base de Datos y Almacenamiento</h3>
+                <p>Configura y gestiona las copias de seguridad del sistema.</p>
+                <button onclick="window.location.href='config_respaldo.html'">Configurar</button> <!-- Botón para redirigir a la página de copias de seguridad -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Universidad - Panel de Administración</p> <!-- Derechos de autor -->
+    </footer>
+
+    <!-- Enlaza el archivo JavaScript externo -->
+    <script src="app.js"></script>
+</body>
+</html>
